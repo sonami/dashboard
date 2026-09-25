@@ -1,4 +1,4 @@
-# 🛡️ Swiss Re — Enterprise Claims & Underwriting Intelligence Dashboard
+# 🛡️ Enterprise Claims & Underwriting Intelligence Dashboard
 
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -39,7 +39,7 @@ An enterprise-grade reinsurance underwriting and claims intelligence dashboard e
 
 ## 🌟 Overview
 
-The **Swiss Re Claims & Underwriting Intelligence Dashboard** solves the challenge of managing complex reinsurance portfolios and interacting with massive legal schedules and treaty documentation without sacrificing client-side responsiveness.
+The **Claims & Underwriting Intelligence Dashboard** solves the challenge of managing complex reinsurance portfolios and interacting with massive legal schedules and treaty documentation without sacrificing client-side responsiveness.
 
 Built with **React 19**, **TypeScript**, and **Microsoft Griffel CSS-in-JS**, the application incorporates:
 - **Instantaneous client-side filtering and pagination** across tens of thousands of customer and claim records.
@@ -94,7 +94,7 @@ Built with **React 19**, **TypeScript**, and **Microsoft Griffel CSS-in-JS**, th
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Swiss Re App Shell                       │
+│                    App Shell                       │
 │  (AppLayout, Header with RBAC Switcher, Sidebar Navigation)  │
 └──────────────────────────────┬──────────────────────────────┘
                                │
@@ -141,7 +141,7 @@ Built with **React 19**, **TypeScript**, and **Microsoft Griffel CSS-in-JS**, th
 Document processing is computationally intensive. The `DocumentWorkerPool` (`src/features/document-workspace/workers/workerPool.ts`) distributes rasterization tasks across dedicated Web Worker threads (`pdf.worker.ts`), ensuring the browser's UI thread maintains 60 FPS during heavy scrolling and zooming operations.
 
 ### Design System & Griffel Styling
-- Design tokens (`src/common/styles/tokens.ts`) define a consistent palette (Swiss Re Navy `#0B2545`, Forest Green `#00AC4F`, Accent Coral `#EF476F`, Slate Neutral `#F8F9FB`).
+- Design tokens (`src/common/styles/tokens.ts`) define a consistent palette ( Navy `#0B2545`, Forest Green `#00AC4F`, Accent Coral `#EF476F`, Slate Neutral `#F8F9FB`).
 - Atomic class generation eliminates style clashes, minimizes CSS bundle size, and supports theme transitions.
 
 ### Dual Build System: Vite & Webpack 5
